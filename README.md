@@ -35,4 +35,4 @@
 
 2. Create a new repository and copy the code from this. 
 
-3. Please share your repository with me so that my team and I will have time to familiarize ourselves with you code before the interview.
+3. Please share your repository with me so that my team and I will have time to familiarize ourselves with your code before the interview.
