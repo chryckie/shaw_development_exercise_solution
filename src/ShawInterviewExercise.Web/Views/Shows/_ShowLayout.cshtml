@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <header class="global-header">
+        <img src="~/Content/images/main_header.png" class="global-header-background"/><br />
+        <a href="/">Introduction</a> <a href="/shows/">Shows</a>
+    </header>
+    @RenderBody()
+    <footer class="global-footer">
+        <div class="float-right">
+            &copy; 2015 David St Bernard
+        </div>
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

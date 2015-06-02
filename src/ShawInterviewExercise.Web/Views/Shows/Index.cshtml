@@ -1,12 +1,37 @@
-﻿@{
+﻿@model List<ShawInterviewExercise.DAL.Show>
+
+@{
     ViewBag.Title = "All Shows";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shows/_ShowLayout.cshtml";
 }
+<div class="allShows">
+    <section class="container-fluid center-cont">
+        <h2>All Shows</h2>
+        @foreach (var item in Model)
+        {
+            <article class="allShows-show col-xs-6 col-sm-4 col-lg-3">
+                <figure class="post-media">
+                    <a href="~/@item.Name" class="link--hasImage">
+                        <img src="@Url.Content(item.ImageUrl)" alt="@item.NameReadable" title="@item.NameReadable" class="post-mediaImg" />
+                    </a>
 
-<h2>All Shows</h2>
+                    <div class="overlay">
+                        <a title="@item.NameReadable - Visit Showpage"
+                           href="~/@item.Name"
+                           class="show-link siteLink @(!(item.VideoUrl==null)?"standalone":"")">Visit showpage</a>
+                        <a title="@item.NameReadable - Watch Video"
+                           href="~/@item.Name/Video"
+                           class="show-link videoLink">Watch video</a>
+                    </div>
+                </figure>
 
-<p>
-    <h2><a href="/shows/Rookie_Blue/">Rookie Blue</a></h2>
-    
-    The best show in the world!!!
-</p>
+                <h3 class="allShows-showTitle">
+                    <a title="@item.NameReadable - Visit Showpage"
+                       href="~/@item.Name"
+                       target="@(!(item.VideoUrl==null)?"_blank":"")"
+                       class="link--primary">@item.NameReadable</a>
+                </h3>
+            </article>
+        }
+    </section>
+</div>

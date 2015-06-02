@@ -113,6 +113,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\ShowControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\ValuesControllerTest.cs" />
   </ItemGroup>
@@ -123,6 +124,10 @@
     <ProjectReference Include="..\ShawInterviewExercise.API\ShawInterviewExercise.API.csproj">
       <Project>{b5e97f08-8cb3-48c8-92d4-050658715610}</Project>
       <Name>ShawInterviewExercise.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShawInterviewExercise.DAL\ShawInterviewExercise.DAL.csproj">
+      <Project>{04c1db45-58bb-47ee-801e-e2cc0052e2b9}</Project>
+      <Name>ShawInterviewExercise.DAL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

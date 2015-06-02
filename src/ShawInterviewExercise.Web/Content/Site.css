@@ -3,12 +3,12 @@
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
     color: #232323;
     background-color: #fff;
+    margin: 0
 }
 
 header, footer, nav, section {
     display: block;
 }
-
 
 /* Styles for basic forms
 -----------------------------------------------------------*/
@@ -59,3 +59,33 @@ textarea {
 .validation-summary-valid {
     display: none;
 }
+
+/*--- Custom styles ---*/
+.global-header { width: 100%; text-align: center; }
+.global-header h1 { margin: 0; padding: 0; }
+.global-header a, a:visited { color: #000066; }
+
+.show-header{width:100%; height:200px; text-align: center; padding-top: 0; padding-bottom: 1em}
+.show-header-image {height:inherit; width:inherit}
+
+.content { text-align: center; padding: 10px; padding-left: 100px; padding-right: 100px; }
+.content h2 {color: #4C2516; width: 100%; }
+
+.global-footer { clear: both; height: 2.5em; text-align: right; background: #4C2516; color: #F2DC87; }
+.global-footer p { margin: 0; padding: 0.5em 1em; }
+
+.allShows-show { float: left; text-align: center }
+
+/*
+.allShows .allShows-show {
+    
+}
+
+.allShows .allShows-show h3 {
+    text-align: center;
+}
+
+.allShows .allShows-show .post-media .overlay {
+    text-align: center;
+}
+*/

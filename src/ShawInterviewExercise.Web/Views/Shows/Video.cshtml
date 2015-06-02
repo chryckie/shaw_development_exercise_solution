@@ -1,10 +1,10 @@
 ﻿@model ShawInterviewExercise.DAL.Show
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Video";
     Layout = "~/Views/Shows/_ShowLayout.cshtml";
 }
 @Html.Partial("_ShowHeader",Model)
 <div class="content show-body">
-    <p>@Model.Description</p>
+    <p>Video Url: @(Model.VideoUrl == null ? "(No Url provided)" : Model.VideoUrl)</p>
 </div>
